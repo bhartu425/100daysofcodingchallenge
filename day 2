@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args){
+    demo dm =new demo();
+    dm.getdata();
+    dm.odd_even();    
+    }
+}
+class demo{
+    int n;
+    void getdata(){
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+    }
+    void odd_even(){
+        if(n%2!=0)
+            System.out.println("Weird");
+        else{
+            if(n<=5)
+                System.out.println("Not Weird");
+            if(n>=6&&n<=20)
+                System.out.println("Weird");
+            else{
+                System.out.println("Not Weird");
+            }
+        }
+    }
+}
+
